@@ -1,6 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { WebdevHome } from './App'
-import './sass/index.scss'
+import App from './App'
+import './index.scss'
 
-ReactDOM.render(<WebdevHome />, document.getElementById('root'))
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+)
