@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "WebDevHome App Data",
+  "description": "The data schema for the WebDevHome application",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "category": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "groups"],
+        "properties": {
+          "title": { "type": "string" },
+          "groups": { "$ref": "#$defs/group" }
+        }
+      }
+    },
+    "group": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "links"],
+        "properties": {
+          "title": { "type": "string" },
+          "links": { "$ref": "#$defs/link" }
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "url"],
+        "dependencies": {
+          "icon": ["color"],
+          "color": ["icon"],
+          "searchUrl": ["searchConcat"],
+          "searchConcat": ["searchUrl"]
+        },
+        "properties": {
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "icon": { "type": "string" },
+          "color": { "type": "string" },
+          "searchUrl": { "type": "string" },
+          "searchConcat": { "type": "string" }
+        }
+      }
+    }
+  },
+  "properties": {
+    "$schema": { "type": "string" },
+    "categories": { "$ref": "#$defs/category" }
+  }
+}
