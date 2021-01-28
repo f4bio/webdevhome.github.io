@@ -2,46 +2,7 @@
   "$schema": "./links.schema.json",
   "items": [
     {
-      "name": "st0re code",
-      "items": [
-        {
-          "title": "c0re git",
-          "url": "http://gitea.private/st0re/c0re",
-          "icon": "gitea",
-          "color": "#181717"
-        }
-      ]
-    },
-    {
-      "name": "st0re ci",
-      "items": [
-        {
-          "title": "c0re pipeline",
-          "url": "http://drone.private/st0re/c0re",
-          "icon": "drone",
-          "color": "#181717"
-        }
-      ]
-    },
-    {
-      "name": "st0re links",
-      "items": [
-        {
-          "title": "c0re /home",
-          "url": "http://localhost:8000/",
-          "icon": "homeassistant",
-          "color": "#181717"
-        },
-        {
-          "title": "c0re /admin",
-          "url": "http://localhost:8000/admin",
-          "icon": "superuser",
-          "color": "#181717"
-        }
-      ]
-    },
-    {
-      "name": "Code and packages",
+      "name": "code",
       "items": [
         {
           "title": "Gitea",
@@ -50,9 +11,43 @@
           "color": "#181717"
         },
         {
+          "title": "st0re/c0re",
+          "url": "http://gitea.private/st0re/c0re",
+          "icon": "gitea",
+          "color": "#181717"
+        }
+      ]
+    },
+    {
+      "name": "ci",
+      "items": [
+        {
           "title": "Drone",
           "url": "http://drone.private",
           "icon": "drone",
+          "color": "#181717"
+        },
+        {
+          "title": "st0re/c0re",
+          "url": "http://drone.private/st0re/c0re",
+          "icon": "drone",
+          "color": "#181717"
+        }
+      ]
+    },
+    {
+      "name": "app",
+      "items": [
+        {
+          "title": "st0re /home",
+          "url": "http://localhost:8000/",
+          "icon": "homeassistant",
+          "color": "#181717"
+        },
+        {
+          "title": "st0re /admin",
+          "url": "http://localhost:8000/admin",
+          "icon": "superuser",
           "color": "#181717"
         }
       ]
@@ -73,7 +68,9 @@
       "items": [
         {
           "title": "Keep a Changelog",
-          "url": "https://keepachangelog.com/en/1.1.0"
+          "url": "https://keepachangelog.com/en/1.1.0",
+          "icon": "keep-a-changelog",
+          "color": "#181717"
         }
       ]
     },
@@ -101,7 +98,9 @@
         },
         {
           "title": "EditorConfig",
-          "url": "https://editorconfig.org"
+          "url": "https://editorconfig.org",
+          "icon": "editorconfig",
+          "color": "#181717"
         }
       ]
     }
