@@ -7,7 +7,7 @@
         {
           "title": "c0re git",
           "url": "http://gitea.private/st0re/c0re",
-          "icon": "github",
+          "icon": "git",
           "color": "#181717"
         }
       ]
@@ -17,8 +17,8 @@
       "items": [
         {
           "title": "c0re pipeline",
-          "url": "http://drone-server.private/st0re/c0re",
-          "icon": "drone",
+          "url": "http://drone.private/st0re/c0re",
+          "icon": "pipe",
           "color": "#181717"
         }
       ]
@@ -35,7 +35,7 @@
         {
           "title": "c0re /admin",
           "url": "http://localhost:8000/admin",
-          "icon": "admin",
+          "icon": "account-supervisor",
           "color": "#181717"
         }
       ]
@@ -46,13 +46,13 @@
         {
           "title": "Gitea",
           "url": "http://gitea.private",
-          "icon": "gitea",
+          "icon": "git",
           "color": "#181717"
         },
         {
           "title": "Drone",
           "url": "http://drone.private",
-          "icon": "drone",
+          "icon": "pipe",
           "color": "#181717"
         }
       ]
